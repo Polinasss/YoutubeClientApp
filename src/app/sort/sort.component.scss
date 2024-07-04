@@ -1,0 +1,47 @@
+.aside {
+    padding: 18px 0px;
+    background-color: #E5E5E5;
+    font-size: 12px;
+
+    .container {
+        display: flex;
+        justify-content: right;
+    }
+
+    .section {
+        max-width: 852px;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+
+        .sort-text {
+            color: #929292;
+            margin: 0 10px;
+        }
+
+        .sort-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 252px;
+            width: 100%;
+            margin: 0px 10px;
+
+            .list-a {
+                color: #2F80ED;
+                text-decoration: none;
+            }
+        }
+
+        .sort-input {
+            height: 13px;
+            width: 149px;
+            border: none;
+        }
+    }
+}
+
+.activeClass {
+    text-decoration: dashed;
+}

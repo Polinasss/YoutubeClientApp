@@ -1,0 +1,95 @@
+.details-container {
+    display: flex;
+    height: 460px;
+    margin: 0 auto;
+    max-width: 1197px;
+    padding-top: 44px;
+
+    .goBack-button {
+        border: none;
+        background-color: transparent;
+        height: fit-content;
+        width: fit-content;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .details {
+        display: flex;
+        align-items: flex-start;
+
+        .details-image {
+            height: 100%;
+            border-radius: 0px 0px 0px 5px;
+        }
+    }
+
+    .details-info {
+        background-color: #E5E5E5;
+        padding: 35px 37px 0px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 5px solid #2F80ED;
+        border-radius: 0 5px 5px 0;
+
+        .info-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .info-h2 {
+                font-size: 24px;
+                font-weight: bold;
+                width: 70%;
+                margin: 0 0;
+            }
+
+            .info-publishedAt {
+                color: #828282;
+                font-size: 10px;
+            }
+        }
+
+        .description {
+            .description-title {
+                font-size: 14px;
+                font-weight: 400;
+                margin: 30px 0px 5px;
+            }
+
+            .description-text {
+                font-size: 12px;
+                color: #828282;
+                margin: 0 0;
+            }
+        }
+
+        .statistics {
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+
+            .card-ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+                margin: 0 0;
+                max-width: 223px;
+                width: 100%;
+
+                .card-li {
+                    text-decoration: none;
+                    display: flex;
+
+                    .card-text {
+                        font-size: 10px;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="search-container">
+                <button [routerLink]="['/']" routerLinkActive="active" class="logo-button">
+                    <img src="/logo.svg" alt="Logo">
+                </button>
+                <div class="search-bar">
+                    <input class="search-input" type="text" placeholder="What are you want to find out?"
+                        [(ngModel)]="searchingText" />
+                    <button class="search-button">search</button>
+                </div>
+                <button class="settings-button" (click)="toggleText()">
+                    <img src="/sort.svg" alt="Settings">
+                </button>
+            </div>
+            <div class="user-info">
+                <p>Your Name</p>
+                <img src="/user.svg" alt="User Icon" class="user-icon">
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div *ngIf="displayText" class="text-block">
+    <app-sort></app-sort>
+</div>

@@ -1,0 +1,13 @@
+<section class="aside">
+    <div class="container">
+        <div class="section">
+            <p class="sort-text">Sorting by:</p>
+            <div class="sort-list">
+                <a class="list-a" [routerLink]="['/date']" routerLinkActive="active" [ngClass]="{'activeClass': step === 'step1'}" (click)="step='step1'">date</a>
+                <a class="list-a" [routerLink]="['/count-of-views']" routerLinkActive="active">count of views</a>
+                <a class="list-a" [routerLink]="['/by-word-or-sentance']" routerLinkActive="active">by word or sentance</a>
+            </div>
+            <input class="sort-input" type="text" name="" id="">
+        </div>
+    </div>
+</section>

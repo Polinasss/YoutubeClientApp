@@ -1,0 +1,29 @@
+<section class="search-results">
+    <div class="card" *ngFor="let card of data">
+        <div class="card-container">
+            <img class="card-img" src={{card.snippet.thumbnails.medium.url}} alt={{card.id}} />
+            <ul class="card-ul">
+                <li class="card-li">
+                    <img src="/viewed.svg" alt="viewed">
+                    <p class="card-text">{{card.statistics.viewCount}}</p>
+                </li>
+                <li class="card-li">
+                    <img src="/liked.svg" alt="liked">
+                    <p class="card-text">{{card.statistics.likeCount}}</p>
+                </li>
+                <li class="card-li">
+                    <img src="/dislike.svg" alt="dislike">
+                    <p class="card-text">{{card.statistics.dislikeCount}}</p>
+                </li>
+                <li class="card-li">
+                    <img src="/comments.svg" alt="comments">
+                    <p class="card-text">{{card.statistics.commentCount}}</p>
+                </li>
+            </ul>
+
+            <h3 class="card-title">{{card.snippet.localized.title}}</h3>
+
+            <button (click)="navigateToRoute(card.id)" routerLinkActive="active" class="card-button">more...</button>
+        </div>
+    </div>
+</section>

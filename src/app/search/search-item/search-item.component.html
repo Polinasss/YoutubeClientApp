@@ -1,0 +1,40 @@
+<section class="details-container">
+    <button (click)="goBack()" class="goBack-button">
+        <img src="/back_button.svg" alt="back_button">
+    </button>
+    <div class="details">
+        <img class="details-image" src={{data?.snippet?.thumbnails?.high?.url}} alt={{data?.snippet?.title}}>
+        <div class="details-info">
+            <div>
+                <div class="info-title">
+                    <h2 class="info-h2">{{data?.snippet?.title}}</h2>
+                    <span class="info-publishedAt">{{myFormattedDate}}</span>
+                </div>
+                <div class="description">
+                    <h3 class="description-title">Description: </h3>
+                    <p class="description-text">{{data?.snippet?.description}}</p>
+                </div>
+            </div>
+            <div class="statistics">
+                <ul class="card-ul">
+                    <li class="card-li">
+                        <img src="/viewed.svg" alt="viewed">
+                        <p class="card-text">{{data?.statistics?.viewCount}}</p>
+                    </li>
+                    <li class="card-li">
+                        <img src="/liked.svg" alt="liked">
+                        <p class="card-text">{{data?.statistics?.likeCount}}</p>
+                    </li>
+                    <li class="card-li">
+                        <img src="/dislike.svg" alt="dislike">
+                        <p class="card-text">{{data?.statistics?.dislikeCount}}</p>
+                    </li>
+                    <li class="card-li">
+                        <img src="/comments.svg" alt="comments">
+                        <p class="card-text">{{data?.statistics?.commentCount}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
